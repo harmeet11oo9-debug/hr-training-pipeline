@@ -29,6 +29,12 @@ An automated data pipeline using **n8n** that:
 
 ---
 
+## n8n Workflow
+
+![HR Training Pipeline](HR_Training_PipeLine.jpg)
+
+---
+
 ## Workflow Overview
 ```
 Schedule Trigger
@@ -60,7 +66,10 @@ Output Sheet    Output Sheet
 
 ---
 
-## Google Sheets Structure
+## Google Sheets – Input & Output
+
+![Employee Training Sheet](Employee_Training.jpg)
+![HR Training Output](HR_Training_Output.jpg)
 
 ### Input Sheet — `Employee_Training`
 
@@ -100,6 +109,8 @@ Enriched columns added by the n8n workflow:
 ---
 
 ## Power BI Dashboard — SkillSync
+
+![SkillSync Dashboard](HR_Dashboard.jpg)
 
 The dashboard provides real-time visibility into training performance.
 
@@ -142,9 +153,9 @@ The dashboard provides real-time visibility into training performance.
 
 ## Repository Structure
 ```
-📁 SkillSync-HR-Training-Pipeline
+📁 hr-training-pipeline
 │
-├── HR_Training_Pipeline.json       ← n8n workflow export file
+├── HR Training Pipeline.json       ← n8n workflow export file
 ├── Employee_Training.jpg           ← Input Google Sheet screenshot
 ├── HR_Training_Output.jpg          ← Output Google Sheet screenshot
 ├── HR_Dashboard.jpg                ← Power BI dashboard screenshot
@@ -156,7 +167,7 @@ The dashboard provides real-time visibility into training performance.
 
 ## How to Use
 
-1. Import `HR_Training_Pipeline.json` into your n8n instance
+1. Import `HR Training Pipeline.json` into your n8n instance
 2. Connect your Google Sheets account in n8n credentials
 3. Replace the Sheet IDs in the Google Sheets nodes with your own
 4. Set your preferred schedule in the Schedule Trigger node
